@@ -1,14 +1,79 @@
-/*header */ 
-body{
-    background-color: blueviolet;
-    padding: 0%;
- margin: 0%;}
- 
- /*sec memona css + media*/
+/*header */
+body {
+  background-color: white;
+  padding: 0%;
+  margin: 0%;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
 
+/*sec memona css + media*/
+.sec-1 {
+  margin: 0%;
+  padding: 20px;
+  display: inline-flex;
+}
 
+.img-1 {
+  display: inline-flex;
+  width: 840px;
+  height: 630px;
+  padding-top: 200px;
+  position: relative;
+}
+.pr-1 {
+  margin: 0%;
+  padding-top: 255px;
+  padding-left: 120px;
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+}
+.pr-2 {
+  padding-left: 120px;
+  color: hsl(229, 8%, 60%);
+  font-size: 19x;
+}
+.bu {
+  padding: 15px 30px;
+  border-radius: 7px;
+  border: 0;
+  box-shadow: 0px 0px 10px 0px rgb(174, 174, 176);
+}
+.bu1 {
+  margin-left: 120px;
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  margin-right: 9px;
+}
+.bu2 {
+  background-color: rgb(246, 246, 247);
+  color: black;
+}
+.img-container {
+  position: relative;
+  width: 800px;
+  height: 700px;
+}
 
- /*sec safa*/
- 
-  /*sec memona css + media*/
- /*sec safa*/
+.img-1 {
+  position: relative;
+  width: 840px;
+  height: 630px;
+  padding-top: 200px;
+  z-index: 2;
+}
+
+.background-shape {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 570px;
+  height: 370px;
+  background-color: hsl(231, 69%, 60%);
+  border-radius: 100px 100px 100px 100px;
+  z-index: 1;
+}
+/*sec safa*/
+
+/*sec memona css + media*/
+/*sec safa*/

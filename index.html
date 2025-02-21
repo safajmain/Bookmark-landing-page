@@ -3,18 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-</head>
+ </head>
 <body>
-    <!-- header -->
+ <!-- header -->
+<header class="l-header" id="header">
+    <nav class="nav bd-container">
+        <img src="images/logo-bookmark.svg" alt="Logo" class="nav__logo">
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="##" class="nav__link active-link">FEATURES</a></li>
+                <li class="nav__item"><a href="##" class="nav__link active-link">PRICING</a></li>
+                <li class="nav__item"><a href="##" class="nav__link active-link">CONTACT</a></li>
+                <li class="nav__item"><a href="##" class="nav__link active-link login-btn">LOGIN</a></li>
+            </ul>
+        </div>
+        
+         <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <img src="images/icon-close.svg" id="close-icon" style="display:none;">
+        </div>
+    </nav>
+</header>
 
+
+<script>
+  
+ 
+
+const navToggle = document.getElementById('nav-toggle');
+const navMenu = document.getElementById('nav-menu');
+const closeIcon = document.getElementById('close-icon');
+const menuIcon = document.getElementById('menu-icon');
+
+ navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+     closeIcon.style.display = closeIcon.style.display === "none" ? "block" : "none"; 
+     menuIcon.style.display = menuIcon.style.display === "none" ? "block" : "none"; 
+ });
+    
+    </script>    
  <!-- sec  memona-->
 
     <!-- sec  safa -->
- 
-
- <!-- sec  memona-->
+  <!-- sec  memona-->
 
        <!-- sec  safa -->
 

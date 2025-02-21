@@ -1,178 +1,174 @@
-<<<<<<< HEAD
-/*header */
-body {
-  background-color: white;
-  padding: 0%;
-  margin: 0%;
-  font-family: "Rubik", sans-serif;
-  font-size: 18px;
-}
-=======
 /*header */ 
- 
 .l-header {
-      top: 0px;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.8);  
-    z-index: 1000;  
-    padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 8px;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+  height: 30px;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
- .nav__logo {
-    float: left;
-    margin-left: 20px;
+body {
+  margin-top: 80px;  /* ترك مساحة تحت الهيدر لتجنب تغطية المحتوى */
 }
 
- .nav__menu {
-    float: right;
-    margin-right: 20px;
+
+.nav__logo {
+float: left;
+margin-left: 20px;
 }
 
- .nav__list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+.nav__menu {
+float: right;
+margin-right: 20px;
+}
+
+.nav__list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
 }
 
 .nav__item {
-    margin-left: 20px;
+margin-left: 20px;
 }
 
 .nav__link {
-    text-decoration: none;
-    color: #000000;  
-    font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+text-decoration: none;
+color: #000000;  
+font-size: 16px;
+font-family: Arial, Helvetica, sans-serif;
 }
 
- .nav__link.login-btn {
-    color: white;  
-    background-color: red;  
-    padding: 10px 20px;  
-    border-radius: 5px; 
-    transition: background-color 0.3s ease, color 0.3s ease;  
+.nav__link.login-btn {
+color: white;  
+background-color: red;  
+padding: 10px 20px;  
+border-radius: 5px; 
+transition: background-color 0.3s ease, color 0.3s ease;  
 }
 
 .nav__link.login-btn:hover {
-    background-color: darkred;
- }
-
- .nav__item .nav__link {
-    transition: color 0.3s ease;
+background-color: darkred;
 }
 
- .nav__link:hover {
-    color: #555;
+.nav__item .nav__link {
+transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+color: #555;
+}
+
+.nav__menu {
+opacity: 0.8;
+}
+
+.nav__toggle {
+display: none;  
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+.nav__link.login-btn {
+color: white;  
+width: 100%;
+border:  2px solid white;
+background-color: rgba(35, 47, 62, 0.7);  
+padding: 15px 100px;  
+border-radius: 5px; 
+}
+
+.nav__toggle {
+
+     display: block;
+    cursor: pointer;
+      margin-right: 20px;  
+     order: 2;
+
+}
+
+
+.nav__toggle {
+    display: block;
+    cursor: pointer;
+    order: 2;  
+    margin-right: 20px;
+}
+.nav__toggle img{
+ background-color: black;
 }
 
  .nav__menu {
-    opacity: 0.8;
+    display: none;
+    position: absolute;
+    top: 60px;  
+    right: 0;
+    height: 700px;
+    background-color: rgba(35, 47, 62, 0.7);         ;
+    width: 90%;
+     line-height: 85px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     order: 3;
 }
 
- .nav__toggle {
-    display: none;  
+ .nav__menu.active {
+    display: block;
 }
 
+ .nav__list {
+    flex-direction: column;
+    align-items: center;
+}
 
+.nav__item {
+    margin: 10px 0;
 
- @media screen and (max-width: 768px) {
-    
- .nav__link.login-btn {
-    color: white;  
-    width: 100%;
-    border:  2px solid white;
-    background-color: rgba(35, 47, 62, 0.7);  
-    padding: 15px 100px;  
-    border-radius: 5px; 
+}
+.nav {
+    display: flex;
+    justify-content: space-between; 
+     align-items: center;
  }
-    
-    .nav__toggle {
+        
 
-         display: block;
-        cursor: pointer;
-          margin-right: 20px;  
-         order: 2;
- 
-    }
-   
-    
-    .nav__toggle {
-        display: block;
-        cursor: pointer;
-        order: 2;  
-        margin-right: 20px;
-    }
-    .nav__toggle img{
-     background-color: black;
-    }
+.nav__logo {
+    order: 1; 
+}
+.nav__item {
+    position: relative;
+    padding: 10px 0;
+ }
 
-     .nav__menu {
-        display: none;
-        position: absolute;
-        top: 60px;  
-        right: 0;
-        height: 700px;
-        background-color: rgba(35, 47, 62, 0.7);         ;
-        width: 90%;
-         line-height: 85px;
-         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-         order: 3;
-    }
+.nav__item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 5%;  
+     width: 100%;  
+    height: 2px; 
+    background-color: rgba(255, 255, 255, 0.5); 
+}
 
-     .nav__menu.active {
-        display: block;
-    }
-
-     .nav__list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav__item {
-        margin: 10px 0;
- 
-    }
-    .nav {
-        display: flex;
-        justify-content: space-between; 
-         align-items: center;
-     }
-            
-
-    .nav__logo {
-        order: 1; 
-    }
-    .nav__item {
-        position: relative;
-        padding: 10px 0;
-     }
-
-    .nav__item::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 5%;  
-         width: 100%;  
-        height: 2px; 
-        background-color: rgba(255, 255, 255, 0.5); 
-    }
-
-     .nav__item:last-child::after {
-        display: none;
-    }
+ .nav__item:last-child::after {
+    display: none;
+}
 
 
 
 }
- 
- 
- 
-  /*sec memona css + media*/
->>>>>>> 3a0bdafd90ada3cb7270207ee0f0ef49e11eff77
+
+
 
 /*sec memona css + media*/
+
 .sec-1 {
   margin: 0%;
   padding: 20px;
@@ -239,6 +235,75 @@ body {
   z-index: 1;
 }
 /*sec safa*/
+ 
+/*sec memona css + media*/
+.sec-1 {
+  margin: 0%;
+  padding: 20px;
+  display: inline-flex;
+}
+
+.img-1 {
+  display: inline-flex;
+  width: 840px;
+  height: 630px;
+  padding-top: 200px;
+  position: relative;
+}
+.pr-1 {
+  margin: 0%;
+  padding-top: 255px;
+  padding-left: 120px;
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+}
+.pr-2 {
+  padding-left: 120px;
+  color: hsl(229, 8%, 60%);
+  font-size: 19x;
+}
+.bu {
+  padding: 15px 30px;
+  border-radius: 7px;
+  border: 0;
+  box-shadow: 0px 0px 10px 0px rgb(174, 174, 176);
+}
+.bu1 {
+  margin-left: 120px;
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  margin-right: 9px;
+}
+.bu2 {
+  background-color: rgb(246, 246, 247);
+  color: black;
+}
+.img-container {
+  position: relative;
+  width: 800px;
+  height: 700px;
+}
+
+.img-1 {
+  position: relative;
+  width: 840px;
+  height: 630px;
+  padding-top: 200px;
+  z-index: 2;
+}
+
+.background-shape {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 570px;
+  height: 370px;
+  background-color: hsl(231, 69%, 60%);
+  border-radius: 100px 100px 100px 100px;
+  z-index: 1;
+}
+
+
+/*sec safa*/
 
 /*sec memona css + media*/
-/*sec safa*/

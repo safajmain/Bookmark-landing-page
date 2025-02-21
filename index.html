@@ -1,45 +1,78 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- header -->
+    <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+ <!-- header -->
+ <header class="l-header" id="header">
+    <nav class="nav bd-container">
+        <img src="images/logo-bookmark.svg" alt="Logo" class="nav__logo">
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="##" class="nav__link active-link">FEATURES</a></li>
+                <li class="nav__item"><a href="##" class="nav__link active-link">PRICING</a></li>
+                <li class="nav__item"><a href="##" class="nav__link active-link">CONTACT</a></li>
+                <li class="nav__item"><a href="##" class="nav__link active-link login-btn">LOGIN</a></li>
+            </ul>
+        </div>
+        
+         <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <img src="images/icon-close.svg" id="close-icon" style="display:none;">
+        </div>
+    </nav>
+</header>
 
-    <!-- sec  memona-->
-    <div class="sec-1">
-      <div>
-        <h1 class="sec-1 pr-1">A Simple Bookmark <br />Manager</h1>
+ <script>
+  
+ 
 
-        <h3 class="sec-1 pr-2">
-          A clean and simple interface to organize your favourite<br />
-          websites. Open a new browser tab and see your sites load
-          <br />instantly. Try it for free.
-        </h3>
+const navToggle = document.getElementById('nav-toggle');
+const navMenu = document.getElementById('nav-menu');
+const closeIcon = document.getElementById('close-icon');
+const menuIcon = document.getElementById('menu-icon');
 
-        <button class="sec-1 bu1 bu">Git on Chrome</button>
-        <button class="sec-1 bu2 bu">Get it on Firefox</button>
-      </div>
+ navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+     closeIcon.style.display = closeIcon.style.display === "none" ? "block" : "none"; 
+     menuIcon.style.display = menuIcon.style.display === "none" ? "block" : "none"; 
+ });
+    
+    </script>    
 
-      <div class="img-container">
-        <div class="background-shape"></div>
+ <!-- sec  memona-->
+ <div class="sec-1">
+    <div>
+      <h1 class="sec-1 pr-1">A Simple Bookmark <br />Manager</h1>
 
-        <img class="img-1" src="images/illustration-hero.svg" alt="logo" />
-      </div>
+      <h3 class="sec-1 pr-2">
+        A clean and simple interface to organize your favourite<br />
+        websites. Open a new browser tab and see your sites load
+        <br />instantly. Try it for free.
+      </h3>
+
+      <button class="sec-1 bu1 bu">Git on Chrome</button>
+      <button class="sec-1 bu2 bu">Get it on Firefox</button>
     </div>
+
+    <div class="img-container">
+      <div class="background-shape"></div>
+
+      <img class="img-1" src="images/illustration-hero.svg" alt="logo" />
+    </div>
+  </div>
     <!-- sec  safa -->
+  <!-- sec  memona-->
 
-    <!-- sec  memona-->
+       <!-- sec  safa -->
 
-    <!-- sec  safa -->
 
-    <!--footer-->
-  </body>
+       <!--footer-->
+
+</body>
 </html>

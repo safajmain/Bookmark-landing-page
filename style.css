@@ -564,3 +564,244 @@ margin:  50PX ;
 
  
 /*sec memona css + media*/
+
+
+/*header */
+body {
+  width: 100%;
+  background-color: white;
+  padding: 0%;
+  margin: 0%;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+
+/*sec memona css + media*/
+.sec-1 {
+  margin: 0%;
+  padding: 20px;
+  display: inline-flex;
+}
+
+.pr-1 {
+  margin: 0%;
+  padding-top: 255px;
+  padding-left: 120px;
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+}
+.pr-2 {
+  padding-left: 120px;
+  color: hsl(229, 8%, 60%);
+  font-size: 19x;
+}
+.bu {
+  padding: 15px 30px;
+  border-radius: 7px;
+  border: 0;
+  box-shadow: 0px 0px 10px 0px rgb(174, 174, 176);
+}
+.bu1 {
+  margin-left: 110px;
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  margin-right: 9px;
+}
+.bu2 {
+  background-color: rgb(246, 246, 247);
+  color: black;
+}
+.img-container {
+  position: relative;
+  width: 800px;
+  height: 700px;
+}
+
+.img-1 {
+  position: relative;
+  width: 840px;
+  height: 630px;
+  padding-top: 200px;
+  z-index: 2;
+}
+
+.background-shape {
+  position: absolute;
+  bottom: -90px;
+  right: -50px;
+  width: 670px;
+  height: 370px;
+  background-color: hsl(231, 69%, 60%);
+  border-radius: 100px 0px 0px 100px;
+  z-index: 1;
+}
+@media (max-width: 375px) {
+  .sec-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .img-container {
+    order: -1;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .img-1 {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    padding-top: 20px;
+    z-index: 2;
+  }
+
+  .background-shape {
+    position: absolute;
+    bottom: -20px;
+    left: 10%;
+
+    width: 200px;
+    height: 150px;
+    padding-left: 100px;
+    margin-left: 70px;
+    background-color: hsl(231, 69%, 60%);
+
+    z-index: 1;
+  }
+
+  .pr-1 {
+    font-size: 24px;
+    padding-top: 50px;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .pr-2 {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: row-reverse;
+  }
+  .bu {
+    border: 0px;
+    padding: 15px 30px;
+
+    border-radius: 7px;
+    margin-top: 25px;
+  }
+
+  .bu1 {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    margin-left: 0;
+  }
+
+  .bu2 {
+    background-color: rgb(246, 246, 247);
+    color: black;
+    margin-left: 170px;
+  }
+}
+
+/*sec safa*/
+
+/*sec memona css + media*/
+.text {
+  margin: 0%;
+  padding-top: 255px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+.pr-2-1 {
+  text-align: center;
+  color: hsl(229, 8%, 60%);
+  font-size: 19x;
+  width: 100%;
+}
+
+.p-color {
+  color: hsl(229, 8%, 60%);
+  margin-top: 0px;
+  margin-bottom: 35px;
+}
+.box-bu {
+  color: white;
+  background-color: hsl(231, 69%, 60%);
+  width: 170px;
+  height: 40px;
+  border-radius: 7px;
+  border: 0;
+  box-shadow: 0px 0px 10px 0px rgb(174, 174, 176);
+  margin-top: 25px;
+}
+.box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  width: 100%;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  width: 230px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgb(174, 174, 176);
+}
+
+.box-2 {
+  margin-top: 60px;
+}
+.box-3 {
+  margin-top: 120px;
+}
+@media (max-width: 375px) {
+  .text {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    margin: 25%;
+    margin-bottom: 15px;
+  }
+  .pr-2-1 {
+    text-align: center;
+    color: hsl(229, 8%, 60%);
+    font-size: 19x;
+    margin: 25%;
+    margin-top: 0px;
+  }
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/*sec safa*/

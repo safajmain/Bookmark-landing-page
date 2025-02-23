@@ -7,13 +7,17 @@
   right: 0;
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 1000;
-  height: 30px;
+  height: 50px;
   padding: 10px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+* {
+  box-sizing: border-box;
+}
+ 
 body {
-  margin-top: 80px; 
+  margin: 0;
+  overflow-x: hidden;  /* يمنع تمرير الشاشة أفقياً */
 }
 
 
@@ -286,6 +290,7 @@ border-radius: 5px;
         text-align: center;
         color: hsl(229, 8%, 60%);
       }
+ 
     
   } 
 
@@ -453,8 +458,8 @@ margin-top: 30px;
 
     .section3-c {
       width: 100%;
-      margin-top: 250px;
-      font-style: normal;
+      margin-top: 50px;
+       font-style: normal;
       font-family: Arial, Helvetica, sans-serif;
       height: 120px;
     }
@@ -568,10 +573,8 @@ margin:  50PX ;
 
 /*header */
 body {
-  width: 100%;
-  background-color: white;
-  padding: 0%;
-  margin: 0%;
+   background-color: white;
+ 
   font-family: "Rubik", sans-serif;
   font-size: 18px;
 }
@@ -635,107 +638,87 @@ body {
   border-radius: 100px 0px 0px 100px;
   z-index: 1;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .sec-1 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    align-items: center; /* محاذاة العناصر في المنتصف */
     text-align: center;
-    padding: 20px;
     width: 100%;
+    padding: 0;
   }
 
   .img-container {
-    order: -1;
-    position: relative;
-    width: 100%;
-    max-width: 300px;
+    width: 100%;  /* تجعل الصورة تأخذ عرض الجوال بالكامل */
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    order: -1; /* لجعل الصورة تظهر أولاً */
   }
 
   .img-1 {
-    width: 100%;
-    max-width: 280px;
+    width: 100%;  /* تأخذ الصورة عرض الجوال بالكامل */
     height: auto;
-    padding-top: 20px;
-    z-index: 2;
   }
 
   .background-shape {
-    position: absolute;
-    bottom: -20px;
-    left: 10%;
+    display: none;  /* إخفاء الشكل الخلفي إن لم يكن مناسبًا على الشاشات الصغيرة */
+  }
 
-    width: 200px;
-    height: 150px;
-    padding-left: 100px;
-    margin-left: 70px;
-    background-color: hsl(231, 69%, 60%);
-
-    z-index: 1;
+  .pr-1, .pr-2 {
+    width: 90%;  /* عرض النصوص بنسبة 90% من عرض الشاشة */
+    padding: 10px;
   }
 
   .pr-1 {
     font-size: 24px;
-    padding-top: 50px;
-    padding-left: 0;
-    width: 100%;
   }
 
   .pr-2 {
     font-size: 14px;
-    padding: 10px;
-    width: 100%;
   }
 
   .buttons-container {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 10px;
     flex-direction: row-reverse;
   }
+
+  .sec-1 {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;  
+  }
+
   .bu {
-    border: 0px;
-    padding: 15px 30px;
-
-    border-radius: 7px;
-    margin-top: 25px;
-  }
-
-  .bu1 {
-    background-color: hsl(231, 69%, 60%);
-    color: white;
-    margin-left: 0;
-  }
-
-  .bu2 {
-    background-color: rgb(246, 246, 247);
-    color: black;
-    margin-left: 170px;
+    flex: 1;  
+    text-align: center;  
+    padding: 10px; 
+    margin: 0; 
   }
 }
 
-/*sec safa*/
 
+/*sec safa*/
+    
+ 
+ 
 /*sec memona css + media*/
 .text {
   margin: 0%;
-  padding-top: 255px;
+  padding-top: 205px;
   text-align: center;
-  font-size: 40px;
+  font-size: 2rem;
   font-family: "Roboto", sans-serif;
   width: 100%;
 }
 .pr-2-1 {
   text-align: center;
   color: hsl(229, 8%, 60%);
-  font-size: 19x;
+  font-size: .9rem;
   width: 100%;
 }
 
@@ -758,8 +741,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px;
-  width: 100%;
+   width: 100%;
 }
 .box {
   display: flex;
@@ -789,6 +771,16 @@ body {
     margin: 25%;
     margin-bottom: 15px;
   }
+  .btn {
+     
+    width: 170px;
+    height: 80px;
+    border-radius: 7px;
+ 
+    box-shadow: 0px 0px 10px 0px rgb(174, 174, 176);
+    margin-top: 25px;
+  }
+  
   .pr-2-1 {
     text-align: center;
     color: hsl(229, 8%, 60%);
@@ -799,9 +791,269 @@ body {
   .box-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 20%;
     align-items: center;
     justify-content: center;
   }
 }
-/*sec safa*/
+
+.dots{
+  width: 90%;
+    
+
+}
+@media (max-width: 480px) {
+  .box-container {
+    display: flex;
+    margin-top: 20px;
+ margin-left: 100px;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+  }
+
+  .dots{
+     width: 100%;
+     height: 50px;
+      
+
+  }
+  .box {
+     width: 100%;  
+    margin-bottom: 20px;  
+  }
+
+.box-bu{
+
+    height: 85px;
+  }
+}
+
+p{
+  font-size: .8rem;
+   
+}
+  
+ 
+
+.section4-4{
+   display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 100px;
+}
+.section4-4 .left-part-4 {
+   display: flex;
+  flex-direction: column;
+  flex: 1;
+   width: 10%;
+   margin-left: 290px;
+  text-align: left;   
+  justify-content: center;
+}
+
+.section4-4 .left-part-4 .text-content-4  p{
+   font-size: .9rem;
+   padding-right: 40%  ;
+   padding-left: 10%;
+   padding-bottom: 25px; 
+   color: hsl(229, 8%, 60%);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.section4-4 .left-part-4 .text-content-4  h3{
+padding-left:10% ;
+padding-right: 20%;
+font-size: 2.1rem;
+  margin-bottom: 10px;
+
+}
+ 
+
+ 
+.section4-4 .right-part-4 {
+   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  flex: 1;
+}
+
+.section4-4 .blue-overlay-4 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width:120%;
+  height: 270px;
+  background-color: hsl(231, 69%, 60%);
+  border-radius: 150px 0 0 150px;  
+  z-index: -1;
+  margin-bottom: 300px;
+  margin-left:70px;
+ }
+
+.section4-4 .image-4 {
+  top: 0;
+    margin-right: 50px;
+    height:  auto;
+  width: 100%;
+ }
+
+.section4-4 .text-content-4 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 30px;
+}
+
+.section4-4 .text-content-4 h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section4-4 .text-content-4 p {
+  font-size: 1rem;
+  color: hsl(229, 8%, 60%);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.section4-4 .button-container-4 {
+  cursor: pointer;
+     display: flex;
+  gap: 10px;
+  margin-left: 48px;
+  justify-content: flex-start;   
+}
+
+.section4-4 button {
+  cursor: pointer;
+box-shadow:  0px 0px 10px 0px rgb(174, 174, 176);
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+ }
+ @media (max-width: 768px) {
+  .section4-4 {
+    margin-top: 220px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .section4-4 .right-part-4 {
+    width: 100%; 
+    align-items: center;
+    order: 1;
+  }
+  
+.section4-4 .left-part-4 .text-content-4  p{
+  font-size: .9rem;
+  padding-right: 0%  ;
+  padding-top: 10px;
+  line-height: 1.5;
+ }
+
+.section4-4 .left-part-4 .text-content-4  h3{
+   margin-bottom: 10px;
+  font-size: 2rem;
+  text-align: center;
+  margin: auto;
+  padding: 0px;
+ 
+}
+
+  .section4-4 .left-part-4 {
+     text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%; 
+    order: 2;
+  }
+
+  .text-content-4 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section4-4 .blue-overlay-4 {
+    width: 90%;
+    height: 230px;
+    border-radius: 0 0 0 100px; 
+    top: 0;
+    margin-left:45px;
+  }
+
+  .section4-4 .image-4 {
+    width: 100%;
+    
+    margin-left: 40px;
+    margin-bottom:0px;
+    margin-top: -70px;
+  }
+
+  .section4-4 .button-container-4 {
+    display: flex;
+    flex-direction: row;  
+    gap: 10px;
+    justify-content: center;  
+    width: 90%;
+    margin: 0 auto;
+   }
+
+  .section4-4 button {
+    flex-grow: 1; 
+    padding: 12px 20px;
+    font-size: 1rem;
+     box-shadow: 0px 0px 10px 0px rgb(174, 174, 176);
+  }
+
+  .left-part-4 .text-content-4 h3 {
+    font-size: 1.8rem;
+  }
+  .sec-2{
+     margin-top: 0px;
+  }
+  .text{
+    margin-top: -160px;
+  }
+  .btr{
+   margin-top: 30px;
+   background-color: hsl(231, 69%, 60%);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 5px;
+ margin-right:  120px;
+ 
+}}
+.btr{
+  margin-top: 30px;
+  background-color: hsl(231, 69%, 60%);
+ color: white;
+ border: none;
+ padding: 15px 50px;
+ border-radius: 5px;
+ margin-left: 45%;
+}
+
+ 
+
+ @media (max-width: 768px) {
+  .btr {
+    margin: 30px auto;  
+    display: block;  
+  }
+}
+
+h2,h4,h1,h6,h5h3{
+   font-size: 2rem;
+}
+.part1 h3{
+  font-size: 2rem;
+}

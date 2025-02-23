@@ -546,7 +546,7 @@ margin:  50PX ;
   .faq {
     width: 90%;   
     margin-top: 15px;
-  }
+   }
 
   .faq-answer p {
     width: 100%;   
@@ -1032,7 +1032,7 @@ box-shadow:  0px 0px 10px 0px rgb(174, 174, 176);
  margin-right:  120px;
  
 }}
-.btr{
+.btr7{
   margin-top: 30px;
   background-color: hsl(231, 69%, 60%);
  color: white;
@@ -1040,14 +1040,18 @@ box-shadow:  0px 0px 10px 0px rgb(174, 174, 176);
  padding: 15px 50px;
  border-radius: 5px;
  margin-left: 45%;
+ margin-top: 400px;
 }
 
  
 
  @media (max-width: 768px) {
-  .btr {
-    margin: 30px auto;  
-    display: block;  
+  .btr7 {
+    margin: 30px auto  0px 50px;  
+     display: block; 
+     margin-top: 450px;
+     margin-left: 140px;
+ 
   }
 }
 
@@ -1056,4 +1060,181 @@ h2,h4,h1,h6,h5h3{
 }
 .part1 h3{
   font-size: 2rem;
+}
+
+.footer {
+  background-color: hsl(231, 69%, 60%);
+  margin-top: 70px;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+}
+.footer2 {
+  background-color: hsl(229, 31%, 21%);
+  display: flex;
+  gap: px;
+}
+.footer-p {
+  padding-top: 50px;
+  color: white;
+  font-size: 9px;
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+}
+.footer-p2 {
+  color: white;
+}
+
+.footer2 h4 {
+  color: white;
+}
+
+.bu-email {
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 0px;
+  background-color: hsl(0, 94%, 66%);
+  height: 40px;
+  width: 80px;
+  color: white;
+}
+.email-bu {
+  display: flex;
+  gap: 7px;
+  height: 70px;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input.info input {
+  width: 300px;
+  height: 40px;
+  border-radius: 8px;
+  border: 0;
+  padding: 10px;
+}
+.input.info i {
+  position: relative;
+  left: -20px;
+  top: 10px;
+  color: hsl(0, 94%, 66%);
+}
+
+.footer2 {
+  background-color: hsl(229, 31%, 21%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px;
+  font-size: 12px;
+}
+
+.footer-logo {
+  margin-top: 50px;
+  margin-left: 60px;
+  margin-right: 5px;
+  height: 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.center {
+  margin-right: 600px;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+.left {
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .footer-p2 {
+    margin-bottom: 40px;
+  }
+  .footer {
+    height: 260px;
+    margin-top: 40px;
+  }
+  .footer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    height: 500px;
+    font-size: 25px;
+  }
+
+  .center,
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+  }
+
+  .footer-logo {
+    height: 15px;
+    margin-right: 250px;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .center p {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-left: 10px;
+    padding-bottom: 120px;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+  }
+
+  .footer-logo {
+    margin: 0;
+    height: 30px;
+  }
+  .email-bu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .bu-email {
+    width: 305px;
+    min-height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
